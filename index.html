@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja"><!--言語設定-->
+<head>
+    <meta charset="utf-8"><!--文字コード設定-->
+    <title>Project Nawatobi</title><!--検索したときのタイトルバーに出る-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!--Bootstrapを取得-->
+    <style>
+        html {
+            scroll-padding-top: 70px; /* ナビバーの高さに合わせる */
+        }
+        .navbar-fixed-top{
+            margin-left: 38px;
+            margin-right: 38px;
+        } /*そのままだとバーが左右両端まで伸びていたので調整*/
+        h1 {
+            border-top: 3px solid #000000;
+            border-bottom: 3px solid #030303;
+            padding-bottom: 10px;
+        }/*大見出しを囲んで強調*/
+
+        p {
+            line-height: 2.0;
+        }
+
+        .list-group-item {
+            background-color: #e7efe9; 
+        }/*listgroupの色は白であらかじめ定められているので更新した*/
+		.starter-template {
+			background-color: #e7efe9;
+		}/*背景色を指定*/
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top"><!--navbarを設置する-->
+        <div class="container" > <!--レスポンシブデザインに-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span> <!--navbarをアイコンに-->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project Nawatobi</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li> <!--navbarに表示する名前と飛ぶ先を設定-->
+                    <li><a href="#wazamei">技名</a></li>
+                    <li><a href="#douga">動画</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="starter-template" style="border-left: 3px solid #000000; border-right:3px solid #000000 ;">
+            <h1 class="text-center" style="font-size: 50px; padding-top: 15px; margin-top: 50px;">HTML/CSSの勉強の成果</h1> <!--大見出し--><!--styleは一つにまとめる！--><!--text-centerで中央揃え--><!--navbarで隠れないよう余白調整-->
+            <h2 class="text-center" style="font-size: 35px;">自己紹介</h2>
+                <p style="margin-left: 5px;">
+                    こんにちは、山科祐紀です！ <br>
+                    現在は北海道大学大学院理学院の修士課程で、数学を専攻しております。特に、群の(コ)ホモロジーを専攻しております。<br>
+                    ここでは、paizaラーニングにてHTML/CSS入門編を勉強した成果として、私の特技である縄跳びについて紹介するWebページを作成することで、成果をご覧いただくとともに、<br>
+                    私について知っていただければと思います！
+                </p>
+            <hr style="border-color: #000000;">
+            <h2 style="margin-bottom: 20px; margin-left: 5px;" id="wazamei">技名の読み方</h2>
+            <p style="margin-bottom: 15px; margin-left: 5px;">
+                縄跳びの技名は、アルファベットの羅列で表します。例えば前跳びはO、二重跳びはOOといったように書きます。<br>
+                ここでは、各アルファベットの意味を簡単にお話しします。
+                文字だけではイメージが湧きにくいものもあると思いますが、後の動画を見ながら理解してみてください！
+            </p>
+                <ul class="list-group" >
+                    <li class="list-group-item " >・O：前跳びのように縄を開いて回す跳び方で、Openの頭文字を取っています。</li>
+                    <li class="list-group-item " >・C：交差跳びのように、腕をクロスして回す跳び方です。Crossの頭文字を取っています</li>
+                    <li class="list-group-item " >・S：八の字のように、縄を横に振ります。Sideの頭文字を取っています</li>
+                    <li class="list-group-item " >・EB：交差跳びにおいて、片方の腕は背中側を通して回す跳び方です。Ear Back crossから来ていて、前後交差跳びとも呼ばれます</li>
+                    <li class="list-group-item">・TJ：大雑把に言えば特殊な二重あや跳びです。腕を交差する際に、片方の腕を股下に通します。</li>
+                </ul>
+            <p style="margin-left: 5px;">
+                想像しにくいEBとTJについては以下の動画(なわとび技研究家もっくんの第一チャンネル様)をご覧ください。
+            </p>
+            <hr style="border-color: #000000;">
+            <div class="text-center" style="margin-top: 15px;">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <iframe width="95%" height="300" 
+                            src="https://www.youtube.com/embed/FkRvrg7c7ko?si=fRs4AfEhNBto0qrh" 
+                            title="EB（提供：なわとび技研究家もっくんの第一チャンネル様）" 
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                        <div class="caption">
+                            <p><strong>EB</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <iframe width="95%" height="300" 
+                            src="https://www.youtube.com/embed/iro671btpVY?si=FrNIxNRwGkjfvwAn" 
+                            title="TJ（提供：なわとび技研究家もっくんの第一チャンネル様）" 
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                        <div class="caption">
+                            <p><strong>TJ</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-color: #000000;">
+            <p style="margin-top: 15px; margin-left: 5px;">
+                上で紹介させていただいたのが全てではなく、他にもまだまだあります。<br>
+                SSOやSSCといったように、これらを複数組み合わせることができ、並べる順番の違いも加味しますので、縄跳びには沢山の種類の技があるんです！<br>
+                SSO,SSCについては以下の動画(なわとび技研究家もっくんの第一チャンネル様)をご覧ください。
+            </p>
+            <div class="text-center" style="margin-top: 15px;">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <iframe width="95%" height="300" 
+                            src="https://www.youtube.com/embed/inLX-glhoo8?si=NEyCB2nv1_Cy5xSU" 
+                            title="SSO（提供：なわとび技研究家もっくんの第一チャンネル様）" 
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="col-sm-6">
+                        <iframe width="95%" height="300" 
+                            src="https://www.youtube.com/embed/wRHfI9aRi3E?si=cW9Ee9VBj7whiQRH" 
+                            title="SSC（提供：なわとび技研究家もっくんの第一チャンネル様）" 
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-color: #000000;">
+            <h2  style="margin-left: 3px;" id="douga">動画</h2>
+            <p style="margin-left: 5px;">実際に私が跳んでいる動画を載せますので、是非ご覧ください！<br>
+                Youtubeの動画を埋め込んでいるので、全画面表示や、再生速度の変更などをしながら縄の動きを追ってみていただけると嬉しいです。<br>
+               （撮影時にはこのような形で載せることを想定しておらず、 インスタグラムのストーリーにあげたものを画面録画していますので、分かりにくい動画となってしまっています。）
+            </p>
+            <div class="row">
+                <div class="text-center">
+                    <div class="col-sm-4">
+                        <iframe width="300" height="400" 
+                            src="https://www.youtube.com/embed/AUtj7B035oc?si=qdQWUre6kG4cnsF9" 
+                            title="SSOOC（提供：自分）" 
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                        <div class="caption">
+                            <p style="line-height: 1.0;"><strong>SSOOC</strong><br>5重跳び系統の技の一つです。<br>5重跳びより複雑には見えますが、比較するとこちらがやや簡単です</p>
+                        </div>
+                    </div><!--SSOOC終わり-->
+                    <div class="col-sm-4">
+                        <iframe width="300" height="400" 
+                            src="https://www.youtube.com/embed/L515BjvZs4Q?si=IIrIUKLJJOmH4vvG" 
+                            title="SSOCO（提供：自分）" 
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                        <div class="caption">
+                            <p style="line-height: 1.0;"><strong>SSOCO</strong><br>5重跳び系統の技の一つです。<br>先ほどのものと比べると腕を動かす回数が多いので<br>ややダイナミックに見えますね</p>
+                        </div>
+                    </div><!--SSOCO終わり-->
+                    <div class="col-sm-4">
+                        <iframe width="300" height="400" 
+                            src="https://www.youtube.com/embed/JInTY4qJB5A?si=AAQJ28QHkOT0au-g" 
+                            title="SOCOC（提供：自分）" 
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                        <div class="caption">
+                            <p style="line-height: 1.0;"><strong>SOCOC</strong><br>5重跳び系統の技の一つです。<br>2倍速にすると本来の速度に戻ります。<br>個人的には成功すると一番爽快感ある技です</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--動画一段目終了-->
+            <hr style="border-color: #000000;">
+             <div class="row">
+                <div class="text-center">
+                    <div class="col-sm-4">
+                        <iframe width="300" height="400" 
+                            src="https://www.youtube.com/embed/QcyedSh5T0g?si=8e7-r8NKA0Z7-Hk0" 
+                            title="OOOOO（提供：自分）" 
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                        <div class="caption">
+                            <p style="line-height: 1.0;"><strong>OOOOO</strong><br>5重跳びです。<br>見た目は地味ですが、比較すると上の技たちよりも<br>難しいです</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <iframe width="300" height="400" 
+                            src="https://www.youtube.com/embed/y0I_TZkuGfA?si=3IaVzD1nhmR9OJAK" 
+                            title="SSCCO（提供：自分）" 
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                        <div class="caption">
+                            <p style="line-height: 1.0;"><strong>SSCCO</strong><br>5重跳び系統の技の一つです。<br>クロスで二回連続で縄を回す分、上の技たちよりも<br>やや難しく感じます</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <iframe width="300" height="400" 
+                            src="https://www.youtube.com/embed/c12FZwpi0P8?si=zb-bC-9iPGZOBqZx" 
+                            title="SEBTJC（提供：自分）" 
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                        <div class="caption">
+                            <p style="line-height: 1.0;"><strong>SEBTJC</strong><br>縄自体は四回転なので今までの技よりも<br>1回少ないですが、難易度は上です。<br>EBからTJにうつるのが非常に大変です。</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--動画二段目終了-->
+            <hr style="border-color: #000000;">
+             <div class="row">
+                <div class="text-center">
+                    <div class="col-sm-4">
+                        <iframe width="300" height="400" 
+                            src="https://www.youtube.com/embed/y4NaYqZl6FQ?si=TEr2OO1GYHyEq_Rd" 
+                            title="SSOSEB（提供：自分）" 
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                        <div class="caption">
+                            <p style="line-height: 1.0;"><strong>SSOSEB</strong><br>5重跳び系統の技の一つです。<br>SSOからSにうつることに苦戦しました。<br>そこで減速してしまいEBが間に合わないのが課題でした</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <iframe width="300" height="400" 
+                            src="https://www.youtube.com/embed/lFJQ_a_BHyI?si=TyotOR2e9ajSqHHd" 
+                            title="SCOOAS（提供：自分）" 
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                        <div class="caption">
+                            <p style="line-height: 1.0;"><strong>SCOOAS</strong><br>5重跳び系統の技の一つです。<br>実はASは説明していない技の一つです。<br>脚の後ろ側で交差を作って回しています。<br>このように、縄跳びにはまだまだいろいろな<br>回し方があるんです。</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <iframe width="300" height="400" 
+                            src="https://www.youtube.com/embed/psNnbTYnJnE?si=aCtbgXxXQEV4ep6Y" 
+                            title="SSOOOO（提供：自分）" 
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                        <div class="caption">
+                            <p style="line-height: 1.0;"><strong>SSOOOO</strong><br>6重跳び系統の技の一つです。<br>6重跳び系統の技の中で、二番目に難易度が低い技で、<br>6重跳びと比べるととても簡単です。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="border-color: #000000;">
+            <h2>終わりに</h2>
+            <p>ここまでご覧いただき誠にありがとうございました。<br>
+                ページの構成やデザインが単調であること、Javascriptを勉強したことがなく使えないことを解決することが次の一歩になると考えているので、今後はそれらが解決できるような学びを続けていきます。
+            </p>
+        <footer> 
+            &copy;2025 Yuki Yamashina | 最終更新日: 2025年10月28日
+        </footer>
+        </div>
+    </div>
+</body>
+</html>
